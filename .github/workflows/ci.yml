@@ -12,6 +12,8 @@ jobs:
         runs-on: ubuntu-latest
         steps:
             - uses: actions/checkout@v3
+#              with:
+#                  ref: ${{ github.event.pull_request.head.sha }}
             - name: Set up Python
               uses: actions/setup-python@v4
               with:
@@ -24,4 +26,4 @@ jobs:
               run: |
                   pre-commit install
             - name: Lint all modified files
-              run: pre-commit run --show-diff-on-failure --color=always --all-files --from-ref ${{ github.event.pull_request.base.sha }} --to-ref ${{ github.event.pull_request.head.sha }} -v
+              run: pre-commit run --show-diff-on-failure --hook-stage post-commit --color=always --all-files --from-ref ${{ github.event.pull_request.base.sha }} --to-ref ${{ github.event.pull_request.head.sha }} -v
