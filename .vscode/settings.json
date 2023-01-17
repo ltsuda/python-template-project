@@ -1,0 +1,15 @@
+{
+    "python.formatting.provider": "black",
+    "python.languageServer": "Pylance",
+    "python.linting.flake8Enabled": true,
+    "[python]": {
+        "editor.defaultFormatter": "ms-python.python",
+        "editor.rulers": [
+            {
+                "column": 100,
+                "color": "#FFFF00"
+            }
+        ],
+        "editor.codeActionsOnSave": { "source.organizeImports": true }
+    }
+}
