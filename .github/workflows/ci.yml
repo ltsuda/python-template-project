@@ -24,4 +24,4 @@ jobs:
               run: |
                   pre-commit install
             - name: Lint all modified files
-              run: pre-commit run --show-diff-on-failure --color=always --all-files --from-ref ${{ github.event.pull_request.base.sha }} --to-ref ${{ github.event.pull_request.head.sha }}
+              run: pre-commit run --show-diff-on-failure --color=always --all-files --from-ref ${{ github.event.pull_request.base.sha }} --to-ref ${{ github.event.pull_request.head.sha }} -v
