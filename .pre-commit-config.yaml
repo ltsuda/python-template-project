@@ -23,9 +23,11 @@ repos:
       - id: poetry-export
         name: poetry export --only dev
         args: ["-f", "requirements.txt", "-o", "dev-requirements.txt", "--only", "dev", "--without-hashes"]
+        verbose: true
       - id: poetry-export
         name: poetry export --without dev
         args: ["-f", "requirements.txt", "-o", "requirements.txt", "--without", "dev", "--without-hashes"]
+        verbose: true
   - repo: local
     hooks:
       - id: flake8
