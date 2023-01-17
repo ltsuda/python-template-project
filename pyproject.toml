@@ -2,7 +2,7 @@
 name = "template-project"
 version = "0.1.0"
 description = "Python template project with linter, formatter and pre-commit"
-authors = ["Leonardo Tsuda <leonardo.tsuda@icloud.com>"]
+authors = ["John Doe <johndoe@provider.com"]
 readme = "README.md"
 packages = [{include = "template_project", from = "src"}]
 
