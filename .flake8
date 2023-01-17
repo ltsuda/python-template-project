@@ -1,0 +1,14 @@
+[flake8]
+ignore = E501, W503
+max-line-length = 100
+max-doc-length = 100
+exclude=
+    .venv
+    build
+    dist
+count = True
+
+
+# Error Codes
+# E501 - line too long (line > 79)
+# W503 - Line break occurred before a binary operator
