@@ -18,7 +18,7 @@ This repository includes `.vscode` workspace configuration for Python language, 
 
 ## ✅ Linter and Formatter
 
-This repository includes `flake8`, `black` and `isort` tools to maintain code consistency and quality. These tools together with VSCode configuration helps code quality while developing but they will run on commit and on pull request on GitHub.
+This repository includes `flake8`, `black` and `isort` tools to maintain code consistency and quality. These tools together with VSCode configuration helps code quality while developing but they will run on commit and on pull request on GitHub
 
 The configuration file for these tools are:
 
@@ -41,8 +41,41 @@ This reposity includes pre-commit that runs on commit and have the following rep
     -   `isort` to sort imports, using `black` as profile
     -   `flake8` to code lint and style checks using `.flake8` file
 
+## ⚙️ GitHub Action
+
+This repository includes a GitHub Action workflow on `.github/workflows/ci.yaml` that runs the `pre-commit` on all files in the Pull Request
+
 ## 🎓 How-to use this template
 
 Follow these steps to create a new repository using this template:
 
-**TBD**
+From this repository [URL](https://github.com/ltsuda/python-template-project), select `Use this template -> Create new repository`, type a `name` for you repository, choose the repository `visibility` and make sure to `check` **Include all branches** so you have access to other Python versions setup
+
+After cloning the new repository, change to the corresponding branch of the Python version you want to use on your project. Rename or remove `src/tempalte_project` diretory and update section `[tool.poetry]` from `pyproject.toml` file and run the following commands to install project dependencies and pre-commit:
+
+Make sure to have the corresponding Python version installed and to be in use in the current shell. As recommendation, use [Pyenv](https://github.com/pyenv/pyenv) to manage multiple Python versions
+
+```bash
+python-template-project ❯ poetry shell
+python-template-project (template-project-py3.11) ❯ poetry install --no-root
+python-template-project (template-project-py3.11) ❯ pre-commit install
+```
+
+**NOTE:**
+-   You can remove any other branch you don't need
+-   You can set the selected branch to be the `default`, remove the `main` branch and then rename the selected one to `main` or anything you desire
+
+Reference:
+-   https://docs.github.com/en/repositories/creating-and-managing-repositories/creating-a-template-repository
+
+## Available Python setup
+
+From https://devguide.python.org/versions/
+
+-   Python 3.7
+-   Python 3.8
+-   Python 3.9
+-   Python 3.10
+-   Python 3.11
+
+As the tools available doesn't support anymore or are not available, `Python 3.6` setup will not be created in this template. If you really need it, feel free to use this template and configure it to `Python 3.6` as you wish, if possible.
