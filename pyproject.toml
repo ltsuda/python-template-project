@@ -7,13 +7,13 @@ readme = "README.md"
 packages = [{include = "template_project", from = "src"}]
 
 [tool.poetry.dependencies]
-python = ">=3.11,<3.12"
+python = ">=3.8,<3.9"
 
 [tool.poetry.group.dev.dependencies]
-flake8 = { version = "*", python = ">=3.11,<3.12" }
-isort = { version = "*", python = ">=3.11,<3.12" }
-pre-commit = { version = "*", python = ">=3.11,<3.12" }
-black = { version = "*", python = ">=3.11,<3.12" }
+flake8 = { version = "*", python = ">=3.8,<3.9" }
+isort = { version = "*", python = ">=3.8,<3.9" }
+pre-commit = { version = "*", python = ">=3.8,<3.9" }
+black = { version = "*", python = ">=3.8,<3.9" }
 
 [build-system]
 requires = ["poetry-core"]
@@ -23,7 +23,7 @@ build-backend = "poetry.core.masonry.api"
 profile = "black"
 
 [tool.black]
-target-version = ['py311']
+target-version = ['py38']
 line-length = 100
 preview = true
 include = '\.pyi?$'
