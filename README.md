@@ -4,7 +4,7 @@
 
 ## 🔎 Overview
 
-Use this template repository for fast Python development setup
+Use this template repository for fast Python development or test automation framework setup
 
 ## 🛠️ Included tools
 
@@ -49,7 +49,7 @@ This repository includes a GitHub Action workflow on `.github/workflows/ci.yaml`
 
 Follow these steps to create a new repository using this template:
 
-From this repository [URL](https://github.com/ltsuda/python-template-project), select `Use this template -> Create new repository`, type a `name` for you repository, choose the repository `visibility` and make sure to `check` **Include all branches** so you have access to other Python versions setup
+From this repository [URL](https://github.com/ltsuda/python-template-project), select `Use this template -> Create new repository`, type a `name` for your repository, choose the repository `visibility` and make sure to `check` **Include all branches** so you have access to other Python versions setup
 
 After cloning the new repository, change to the corresponding branch of the Python version you want to use on your project. Rename or remove `src/template_project` directory and update section `[tool.poetry]` from `pyproject.toml` file and run the following commands to install project dependencies and pre-commit:
 
@@ -57,11 +57,11 @@ Make sure to have the corresponding Python version installed and to be in use in
 
 ```bash
 python-template-project ❯ poetry shell
-python-template-project (template-project-py3.11) ❯ poetry install --no-root
+python-template-project (template-project-py3.11) ❯ poetry update
 python-template-project (template-project-py3.11) ❯ pre-commit install
 ```
 
-If you don't want to use poetry, you can use the `[dev-]requirements.txt` files as they are always synched with the poetry dependencies
+If you don't want to use poetry, you can use the `[dev-]requirements.txt` files as they are synched with the poetry dependencies but then you have to control them yourself
 
 **NOTE:**
 -   You can remove any other branch you don't need
@@ -80,4 +80,4 @@ From https://devguide.python.org/versions/
 -   Python 3.10
 -   Python 3.11
 
-As the tools available doesn't support anymore or are not available, `Python 3.6` setup will not be created in this template. If you really need it, feel free to use this template and configure it to `Python 3.6` as you wish, if possible.
+As some of the tools available doesn't support anymore or are not available for `Python 3.6`, the branch setup will not be created in this template. If you really need it, feel free to use this template and configure it to `Python 3.6` as you wish, if possible
