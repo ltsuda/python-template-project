@@ -61,6 +61,8 @@ python-template-project (template-project-py3.11) ❯ poetry install --no-root
 python-template-project (template-project-py3.11) ❯ pre-commit install
 ```
 
+If you don't want to use poetry, you can use the `[dev-]requirements.txt` files as they are always synched with the poetry dependencies
+
 **NOTE:**
 -   You can remove any other branch you don't need
 -   You can set the selected branch to be the `default`, remove the `main` branch and then rename the selected one to `main` or anything you desire
