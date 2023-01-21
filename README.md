@@ -4,12 +4,12 @@
 
 ## 🔎 Overview
 
-Use this template repository for fast Python developement setup
+Use this template repository for fast Python development setup
 
 ## 🛠️ Included tools
 
--   [Poetry](https://python-poetry.org/) for dependency managament
--   [Pre-commit](https://pre-commit.com/) for code consistancy and quality
+-   [Poetry](https://python-poetry.org/) for dependency management
+-   [Pre-commit](https://pre-commit.com/) for code consistency and quality
 -   [Editorconfig](https://editorconfig.org/) for compatible code editor configuration
 
 ## 📝 Visual Studio Code
@@ -29,7 +29,7 @@ The configuration file for these tools are:
 
 ## 🤖 Pre-commit
 
-This reposity includes pre-commit that runs on commit and have the following repo hooks:
+This repository includes pre-commit that runs on commit and have the following repo hooks:
 
 -   `pre-commit-hooks` some built-in hooks
 -   `poetry`
@@ -51,7 +51,7 @@ Follow these steps to create a new repository using this template:
 
 From this repository [URL](https://github.com/ltsuda/python-template-project), select `Use this template -> Create new repository`, type a `name` for you repository, choose the repository `visibility` and make sure to `check` **Include all branches** so you have access to other Python versions setup
 
-After cloning the new repository, change to the corresponding branch of the Python version you want to use on your project. Rename or remove `src/tempalte_project` diretory and update section `[tool.poetry]` from `pyproject.toml` file and run the following commands to install project dependencies and pre-commit:
+After cloning the new repository, change to the corresponding branch of the Python version you want to use on your project. Rename or remove `src/template_project` directory and update section `[tool.poetry]` from `pyproject.toml` file and run the following commands to install project dependencies and pre-commit:
 
 Make sure to have the corresponding Python version installed and to be in use in the current shell. As recommendation, use [Pyenv](https://github.com/pyenv/pyenv) to manage multiple Python versions
 
