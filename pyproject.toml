@@ -23,7 +23,7 @@ build-backend = "poetry.core.masonry.api"
 profile = "black"
 
 [tool.black]
-target-version = ['py10']
+target-version = ['py310']
 line-length = 100
 preview = true
 include = '\.pyi?$'
